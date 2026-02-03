@@ -8,8 +8,6 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
-  const githubProfile = "https://github.com/aidanshort";
-
   return (
     <section id="projects" className="scroll-mt-24 py-24">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-12">
@@ -18,7 +16,7 @@ export default function ProjectsSection() {
             Featured <span className="text-blue-700">Projects</span>
           </h2>
           <p className="mx-auto max-w-2xl text-base text-slate-600">
-            A selection of personal projects I've worked on recently.
+            A selection of personal projects I&apos;ve worked on recently.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
