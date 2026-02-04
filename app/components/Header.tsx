@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Header() {
   return (
     <header className="fixed top-0 z-20 w-full border-b border-slate-200/70 bg-background backdrop-blur">
@@ -9,12 +7,12 @@ export default function Header() {
           href="#about"
           aria-label="Go to about section"
         >
-          <Image
+          <img
             src="/favicon.ico"
             alt="Aidan Short logo"
             width={36}
             height={36}
-            priority
+            loading="eager"
             className="h-9 w-9"
           />
         </a>
