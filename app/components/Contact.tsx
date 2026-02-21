@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import type { FormEvent } from "react";
+import type { SubmitEvent } from "react";
 
 export default function ContactSection() {
   const email = "aidanpshort@gmail.com";
@@ -10,7 +10,7 @@ export default function ContactSection() {
   const github = "https://github.com/aidanshort";
   const formRef = useRef<HTMLFormElement | null>(null);
   const [isValid, setIsValid] = useState(false);
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const senderName = String(formData.get("name") ?? "");

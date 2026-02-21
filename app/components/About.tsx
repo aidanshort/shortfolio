@@ -8,7 +8,7 @@ export default function AboutSection() {
         <h1 className="text-center text-3xl font-semibold text-slate-900 sm:text-5xl">
           Aidan <span className="text-blue-700">Short</span>
         </h1>
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-1">
           <div className="space-y-6 rounded-2xl border border-slate-200 bg-white/70 p-8 text-base leading-7 text-slate-900 shadow-sm">
             <h2 className="text-xl font-semibold text-blue-700">About Me</h2>
             <p>
@@ -20,14 +20,6 @@ export default function AboutSection() {
               My background is in enterprise Java platforms and distributed
               systems, with a growing interest in UI development and robotics.
             </p>
-          </div>
-          <div className="space-y-6 rounded-2xl border border-slate-200 bg-white/70 p-8 text-base leading-7 text-slate-900 shadow-sm">
-            <h2 className="text-xl font-semibold text-blue-700">Focus Areas</h2>
-            <ul className="list-disc space-y-3 pl-5 text-slate-700">
-              <li>API design and service reliability.</li>
-              <li>Data modeling and performance-focused systems.</li>
-              <li>Thoughtful UI work when the product needs it.</li>
-            </ul>
           </div>
         </div>
       </div>
