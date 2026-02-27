@@ -1,5 +1,11 @@
 const projects = [
   {
+    title: "Barbot",
+    description:
+      "Robotic bartender capable of making your favorite drinks at the click of a button.",
+    repoUrl: "https://github.com/aidanshort/barbot",
+  },
+  {
     title: "Portfolio Website",
     description:
       "Personal portfolio website built with Next.js and Tailwind CSS.",
