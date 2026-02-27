@@ -1,3 +1,5 @@
+import ScrollFadeSection from "@/app/components/ScrollFadeSection";
+
 const skills = [
   "Java",
   "Python",
@@ -18,7 +20,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="scroll-mt-24 py-24">
+    <ScrollFadeSection id="skills" className="z-30 scroll-mt-24 py-24">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-12">
         <h2 className="text-center text-3xl font-semibold text-slate-900 sm:text-4xl">
           My <span className="text-blue-700">Skills</span>
@@ -27,13 +29,13 @@ export default function SkillsSection() {
           {skills.map((skill) => (
             <span
               key={skill}
-              className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700"
+              className="rounded-full border border-slate-200 bg-white/85 px-4 py-2 text-sm font-medium text-slate-700"
             >
               {skill}
             </span>
           ))}
         </div>
       </div>
-    </section>
+    </ScrollFadeSection>
   );
 }
