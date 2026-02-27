@@ -1,7 +1,7 @@
+import AboutSection from "@/app/components/About";
 import ContactSection from "@/app/components/Contact";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
-import AboutSection from "@/app/components/About";
 import ProjectsSection from "@/app/components/Projects";
 import SkillsSection from "@/app/components/Skills";
 

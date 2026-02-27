@@ -1,8 +1,10 @@
+import ScrollFadeSection from "@/app/components/ScrollFadeSection";
+
 export default function AboutSection() {
   return (
-    <section
+    <ScrollFadeSection
       id="about"
-      className="flex min-h-[calc(100vh-96px)] w-full scroll-mt-24 flex-col items-center justify-center py-24 text-center"
+      className="z-40 flex min-h-[calc(100vh-96px)] w-full scroll-mt-24 flex-col items-center justify-center py-24 text-center"
     >
       <div className="flex w-full max-w-4xl flex-col gap-12">
         <h1 className="text-center text-3xl font-semibold text-slate-900 sm:text-5xl">
@@ -23,6 +25,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
+    </ScrollFadeSection>
   );
 }

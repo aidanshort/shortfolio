@@ -1,3 +1,5 @@
+import ScrollFadeSection from "@/app/components/ScrollFadeSection";
+
 const projects = [
   {
     title: "Portfolio Website",
@@ -9,7 +11,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="scroll-mt-24 py-24">
+    <ScrollFadeSection id="projects" className="z-20 scroll-mt-24 py-24">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-12">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl">
@@ -23,7 +25,7 @@ export default function ProjectsSection() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="relative flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+              className="relative flex h-full flex-col rounded-2xl border border-slate-200 bg-white/85 p-6 shadow-sm transition-shadow hover:shadow-md"
             >
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-slate-900">
@@ -50,6 +52,6 @@ export default function ProjectsSection() {
           ))}
         </div>
       </div>
-    </section>
+    </ScrollFadeSection>
   );
 }
